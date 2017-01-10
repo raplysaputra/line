@@ -15,22 +15,22 @@ if (!is_null($events['events'])) {
 			$text = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
-
+			$user=$event['source']['userId'];
 			// Build message to reply back
 			if($event['message']['text']=="google"){
 				$messages = [
 					'type' => 'text',
-					'text' => "www.google.co.th"
+					'text' => $user."<br>www.google.co.th"
 				];
 			}else if($event['message']['text']=="facebook"){
 				$messages = [
 					'type' => 'text',
-					'text' => "www.facebook.com"
+					'text' => $user."<br>www.facebook.com"
 				];
 			}else{
 				$messages = [
 					'type' => 'text',
-					'text' => "คุณส่งคำว่า : ".$text
+					'text' => $user."<br>คุณส่งคำว่า : ".$text
 				];
 			}
 
