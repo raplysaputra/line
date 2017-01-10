@@ -20,17 +20,17 @@ if (!is_null($events['events'])) {
 			if($event['message']['text']=="google"){
 				$messages = [
 					'type' => 'text',
-					'text' => $user."<br>www.google.co.th"
+					'text' => $user."\nwww.google.co.th"
 				];
 			}else if($event['message']['text']=="facebook"){
 				$messages = [
 					'type' => 'text',
-					'text' => $user."<br>www.facebook.com"
+					'text' => $user."\nwww.facebook.com"
 				];
 			}else{
 				$messages = [
 					'type' => 'text',
-					'text' => $user."<br>คุณส่งคำว่า : ".$text
+					'text' => $user."\nคุณส่งคำว่า : ".$text
 				];
 			}
 
