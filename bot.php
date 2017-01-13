@@ -1,3 +1,11 @@
+<form method="post" action="$PORTAL_ACTION$">
+   <input name="auth_user" type="text">
+   <input name="auth_pass" type="password">
+   <input name="auth_voucher" type="text">
+   <input name="redirurl" type="hidden" value="$PORTAL_REDIRURL$">
+   <input name="zone" type="hidden" value="$PORTAL_ZONE$">
+   <input name="accept" type="submit" value="Continue">
+</form>
 <?php
 $access_token = 'KKTDf1y+hn0XlTc/dwdnTGW3lM1iNlae4bgksk/7JLLBJo8rTZmPN5jmlCnfSQh4C9egi4Wq0pO5jx1OieL3Oph6NsrS2rnO3Frl/C5RHBP85LQmJLKAzf7fcvZoeMlufycfb5PSM0cbYpWLnWkG4wdB04t89/1O/w1cDnyilFU=';
 
