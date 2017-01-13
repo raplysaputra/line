@@ -22,7 +22,7 @@ if (!is_null($events['events'])) {
 					'type' => 'text',
 					'text' => $user."\nwww.google.co.th"
 				];
-			}else if($event['message']['text']=="facebook"){
+			}else if($event['message']['text']=="facebook"||$event['message']['text']=="เฟส"||$event['message']['text']=="fb"||$event['message']['text']=="เฟบุ๊ค"){
 				$messages = [
 					'type' => 'text',
 					'text' => $user."\nwww.facebook.com"
