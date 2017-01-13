@@ -17,7 +17,7 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 			$user=$event['source']['userId'];
 			// Build message to reply back
-			if($event['message']['text']=="google"){
+			if($event['message']['text']=="google"||$event['message']['text']=="กูเกิล"){
 				$messages = [
 					'type' => 'text',
 					'text' => $user."\nwww.google.co.th"
