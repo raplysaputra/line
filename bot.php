@@ -29,16 +29,16 @@ if (!is_null($events['events'])) {
 				$messages = [
 					'type' => 'text',
 					'text' => $user."\nwww.google.co.th"
-				];
-			}else if($event['message']['text']=="google"||$event['message']['text']=="Login"){
-				$messages = [
-					'type' => 'text',
-					'text' => $user."http://localhost/report/from-login.html"
-				];
+				];		
 			}else if($event['message']['text']=="facebook"||$event['message']['text']=="เฟส"||$event['message']['text']=="fb"||$event['message']['text']=="เฟบุ๊ค"){
 				$messages = [
 					'type' => 'text',
 					'text' => $user."\nwww.facebook.com"
+				];
+			}else if($event['message']['text']=="ขอรายงาน"){
+				$messages = [
+					'type' => 'text',
+					'text' => "คุณยังไม่มีสิทธิเข้าถึง กรุณายืนยันตัวตนที่\nsheltered-plateau-71817.herokuapp.com/from-login.html?uid=".$user
 				];
 			}else{
 				$messages = [
