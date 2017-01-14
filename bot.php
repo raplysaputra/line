@@ -33,7 +33,7 @@ if (!is_null($events['events'])) {
 			}else if($event['message']['text']=="google"||$event['message']['text']=="Login"){
 				$messages = [
 					'type' => 'text',
-					'text' => $user."\nhttp://localhost/report/from-login.html"
+					'text' => $user."http://localhost/report/from-login.html"
 				];
 			}else if($event['message']['text']=="facebook"||$event['message']['text']=="เฟส"||$event['message']['text']=="fb"||$event['message']['text']=="เฟบุ๊ค"){
 				$messages = [
