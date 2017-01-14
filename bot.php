@@ -30,6 +30,11 @@ if (!is_null($events['events'])) {
 					'type' => 'text',
 					'text' => $user."\nwww.google.co.th"
 				];
+			}else if($event['message']['text']=="google"||$event['message']['text']=="Login"){
+				$messages = [
+					'type' => 'text',
+					'text' => $user."\nC:\xampp\htdocs\Report\from-login.html"
+				];
 			}else if($event['message']['text']=="facebook"||$event['message']['text']=="เฟส"||$event['message']['text']=="fb"||$event['message']['text']=="เฟบุ๊ค"){
 				$messages = [
 					'type' => 'text',
