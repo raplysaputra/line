@@ -38,7 +38,7 @@ if (!is_null($events['events'])) {
 			}else if($event['message']['text']=="ขอรายงาน"){
 				$messages = [
 					'type' => 'text',
-					'text' => "คุณยังไม่มีสิทธิเข้าถึง กรุณายืนยันตัวตนที่\nsheltered-plateau-71817.herokuapp.com/from-login.html?uid=".$user
+					'text' => "sheltered-plateau-71817.herokuapp.com/reporttest.html"
 				];
 			}else{
 				$messages = [
