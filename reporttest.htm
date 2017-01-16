@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>My first chart using FusionCharts Suite XT</title>
+<script type="text/javascript" src="js/fusioncharts.js"></script>
+<script type="text/javascript" src="js/themes/fusioncharts.theme.fint.js"></script>
+<script type="text/javascript">
+  FusionCharts.ready(function(){
+    var revenueChart = new FusionCharts({
+        "type": "doughnut2d",
+        "renderAt": "chartContainer",
+        "width": "1200",
+        "height": "800",
+        "dataFormat": "json",
+        "dataSource":  {
+          "chart": {
+            "caption": "แผนภาพแสดงรายการขาย",
+            "subCaption": "วันที่ xx xx xxxx - xx xx xxxx",
+            "xAxisName": "Month",
+            "yAxisName": "Revenues (In USD)",
+            "theme": "fint"
+         },
+         "data": [[
+    {
+        "label": "5:\u0e42\u0e01\u0e2a\u0e38\u0e21\u0e1e\u0e34\u0e2a\u0e31\u0e22(\u0e2e\u0e2d\u0e19\u0e14\u0e49\u0e32)",
+        "value": "30515"
+    },
+    {
+        "label": "16:\u0e41\u0e01\u0e14\u0e33",
+        "value": "0"
+    },
+    {
+        "label": "3:\u0e23\u0e34\u0e21\u0e04\u0e25\u0e2d\u0e07(\u0e27\u0e2a\u0e38)",
+        "value": 211100
+    },
+    {
+        "label": "12:\u0e1e\u0e22\u0e31\u0e04\u0e06\u0e4c",
+        "value": "49000"
+    },
+    {
+        "label": "8:\u0e01\u0e32\u0e2c\u0e2a\u0e34\u0e19\u0e18\u0e38\u0e4c",
+        "value": "53500"
+    },
+    {
+        "label": "1:\u0e2a\u0e33\u0e19\u0e31\u0e01\u0e07\u0e32\u0e19\u0e43\u0e2b\u0e0d\u0e48",
+        "value": 26000
+    },
+    {
+        "label": "11:\u0e1a\u0e23\u0e1a\u0e37\u0e2d",
+        "value": 1786600
+    },
+    {
+        "label": "14:\u0e19\u0e32\u0e40\u0e0a\u0e37\u0e2d\u0e01",
+        "value": 84000
+    }
+]]
+      }
+
+  });
+revenueChart.render();
+})
+</script>
+</head>
+<body>
+  <div id="chartContainer">FusionCharts XT will load here!</div>
+</body>
+</html>
