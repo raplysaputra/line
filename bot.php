@@ -38,7 +38,7 @@ if (!is_null($events['events'])) {
 			}else if($event['message']['text']=="ขอรายงาน"){
 				$messages = [
 					'type' => 'text',
-					'text' => "ezmember.org:7081/report/reporttest.php"
+					'text' => "ezmember.org:7081/report/reporttest.htm"
 					//'text' => "sheltered-plateau-71817.herokuapp.com/reporttest.htm"
 				];
 			}else{
