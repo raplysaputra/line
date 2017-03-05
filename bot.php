@@ -35,10 +35,28 @@ if (!is_null($events['events'])) {
 					'type' => 'text',
 					'text' => $user."\nwww.facebook.com"
 				];
-			}else if($event['message']['text']=="ขอรายงาน"){
+			}else if($event['message']['text']=="เปรียบเทียบยอดขาย-ยี่ห้อ-มค59-กพ5"){
 				$messages = [
 					'type' => 'text',
-					'text' => "ezmember.org:7081/report/reporttest.htm"
+					'text' => "ezmember.org:7080/report/เปรียบเทียบยอดขาย_ยี่ห้อ_มค59-กพ5.html"
+					//'text' => "sheltered-plateau-71817.herokuapp.com/reporttest.htm"
+				];
+			}else if($event['message']['text']=="เปรียบเทียบยอดขาย-สาขา-มค59-กพ59"){
+				$messages = [
+					'type' => 'text',
+					'text' => "ezmember.org:7081/report/เปรียบเทียบยอดขาย_สาขา_ มค59-กพ59.html"
+					//'text' => "sheltered-plateau-71817.herokuapp.com/reporttest.htm"
+				];
+			}else if($event['message']['text']=="สรุปรายงานยยอดขาย-ยี่ห้อ-ปี59"){
+				$messages = [
+					'type' => 'text',
+					'text' => "ezmember.org:7081/report/สรุปรายงานยยอดขาย_ยี่ห้อ_ปี59.html"
+					//'text' => "sheltered-plateau-71817.herokuapp.com/reporttest.htm"
+				];
+			}else if($event['message']['text']=="สรุปรายงานยยอดขาย-สาขา-ปี59"){
+				$messages = [
+					'type' => 'text',
+					'text' => "ezmember.org:7081/report/สรุปรายงานยยอดขาย_สาขาปี59.html"
 					//'text' => "sheltered-plateau-71817.herokuapp.com/reporttest.htm"
 				];
 			}else{
