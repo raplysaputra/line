@@ -44,19 +44,19 @@ if (!is_null($events['events'])) {
 			}else if($event['message']['text']=="เปรียบเทียบยอดขาย-สาขา-มค59-กพ59"){
 				$messages = [
 					'type' => 'text',
-					'text' => "ezmember.org:7081/report/เปรียบเทียบยอดขาย-สาขา-มค59-กพ59.html"
+					'text' => "ezmember.org:7080/report/เปรียบเทียบยอดขาย_สาขา_มค59-กพ59.html"
 					//'text' => "sheltered-plateau-71817.herokuapp.com/reporttest.htm"
 				];
 			}else if($event['message']['text']=="สรุปรายงานยยอดขาย-ยี่ห้อ-ปี59"){
 				$messages = [
 					'type' => 'text',
-					'text' => "ezmember.org:7081/report/สรุปรายงานยยอดขาย_ยี่ห้อ_ปี59.html"
+					'text' => "ezmember.org:7080/report/สรุปรายงานยยอดขาย_ยี่ห้อ_ปี59.html"
 					//'text' => "sheltered-plateau-71817.herokuapp.com/reporttest.htm"
 				];
 			}else if($event['message']['text']=="สรุปรายงานยยอดขาย-สาขา-ปี59"){
 				$messages = [
 					'type' => 'text',
-					'text' => "ezmember.org:7081/report/สรุปรายงานยยอดขาย_สาขา_ปี59.html"
+					'text' => "ezmember.org:7080/report/สรุปรายงานยยอดขาย_สาขา_ปี59.html"
 					//'text' => "sheltered-plateau-71817.herokuapp.com/reporttest.htm"
 				];
 			}else{
