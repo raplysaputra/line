@@ -117,7 +117,7 @@ if (!is_null($events['events'])) {
 					'type' => 'text',
 					'text' => $user."\nwww.facebook.com"
 				];
-			}else if($event['message']['text']=="เปรียบเทียบยอดขาย-ยี่ห้อ-มค59-กพ59"){
+			}else if(stripos($text, "ขอรายงาน") !== false){
 				$messages = [
 					'type' => 'text',
 					'text' => "msu.ezmember.org:7080/report/reportfiles/".getdatenyear($text);
