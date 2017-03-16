@@ -10,73 +10,73 @@
 function getdatenyear($mes){
 	if(stripos($mes, 'มค')){
 		if(is_numeric(substr($mes, stripos($mes, 'มค')+6,2)) and strlen(substr($mes, stripos($mes, 'มค')+6,2))==2){
-			return "sale_report_01_".(intval(substr($mes, stripos($mes, 'มค')+6,2))-43).".html";
+			return "msu.ezmember.org:7080/report/reportfiles/sale_report_01_".(intval(substr($mes, stripos($mes, 'มค')+6,2))-43).".html";
 		}else{
 			return datefail();
 		}			
 	}else if(stripos($mes, 'กพ')){
 		if(is_numeric(substr($mes, stripos($mes, 'กพ')+6,2)) and strlen(substr($mes, stripos($mes, 'กพ')+6,2))==2){
-			return "sale_report_02_".(intval(substr($mes, stripos($mes, 'กพ')+6,2))-43).".html";
+			return "msu.ezmember.org:7080/report/reportfiles/sale_report_02_".(intval(substr($mes, stripos($mes, 'กพ')+6,2))-43).".html";
 		}else{
 			return datefail();
 		}			
 	}else if(stripos($mes, 'มีค')){
 		if(is_numeric(substr($mes, stripos($mes, 'มีค')+9,2)) and strlen(substr($mes, stripos($mes, 'มีค')+9,2))==2){
-			return "sale_report_03_".(intval(substr($mes, stripos($mes, 'มีค')+9,2))-43).".html";
+			return "msu.ezmember.org:7080/report/reportfiles/sale_report_03_".(intval(substr($mes, stripos($mes, 'มีค')+9,2))-43).".html";
 		}else{
 			return datefail();
 		}			
 	}else if(stripos($mes, 'เมย')){
 		if(is_numeric(substr($mes, stripos($mes, 'เมย')+9,2)) and strlen(substr($mes, stripos($mes, 'เมย')+9,2))==2){
-			return "sale_report_04_".(intval(substr($mes, stripos($mes, 'เมย')+9,2))-43).".html";
+			return "msu.ezmember.org:7080/report/reportfiles/sale_report_04_".(intval(substr($mes, stripos($mes, 'เมย')+9,2))-43).".html";
 		}else{
 			return datefail();
 		}			
 	}else if(stripos($mes, 'พค')){
 		if(is_numeric(substr($mes, stripos($mes, 'พค')+6,2)) and strlen(substr($mes, stripos($mes, 'พค')+6,2))==2){
-			return "sale_report_05_".(intval(substr($mes, stripos($mes, 'พค')+6,2))-43).".html";
+			return "msu.ezmember.org:7080/report/reportfiles/sale_report_05_".(intval(substr($mes, stripos($mes, 'พค')+6,2))-43).".html";
 		}else{
 			return datefail();
 		}			
 	}else if(stripos($mes, 'มิย')){
 		if(is_numeric(substr($mes, stripos($mes, 'มิย')+9,2)) and strlen(substr($mes, stripos($mes, 'มิย')+9,2))==2){
-			return "sale_report_06_".(intval(substr($mes, stripos($mes, 'มิย')+9,2))-43).".html";
+			return "msu.ezmember.org:7080/report/reportfiles/sale_report_06_".(intval(substr($mes, stripos($mes, 'มิย')+9,2))-43).".html";
 		}else{
 			return datefail();
 		}			
 	}else if(stripos($mes, 'กค')){
 		if(is_numeric(substr($mes, stripos($mes, 'กค')+6,2)) and strlen(substr($mes, stripos($mes, 'กค')+6,2))==2){
-			return "sale_report_07_".(intval(substr($mes, stripos($mes, 'กค')+6,2))-43).".html";
+			return "msu.ezmember.org:7080/report/reportfiles/sale_report_07_".(intval(substr($mes, stripos($mes, 'กค')+6,2))-43).".html";
 		}else{
 			return datefail();
 		}			
 	}else if(stripos($mes, 'สค')){
 		if(is_numeric(substr($mes, stripos($mes, 'สค')+6,2)) and strlen(substr($mes, stripos($mes, 'สค')+6,2))==2){
-			return "sale_report_08_".(intval(substr($mes, stripos($mes, 'สค')+6,2))-43).".html";
+			return "msu.ezmember.org:7080/report/reportfiles/sale_report_08_".(intval(substr($mes, stripos($mes, 'สค')+6,2))-43).".html";
 		}else{
 			return datefail();
 		}			
 	}else if(stripos($mes, 'กย')){
 		if(is_numeric(substr($mes, stripos($mes, 'กย')+6,2)) and strlen(substr($mes, stripos($mes, 'กย')+6,2))==2){
-			return "sale_report_09_".(intval(substr($mes, stripos($mes, 'กย')+6,2))-43).".html";
+			return "msu.ezmember.org:7080/report/reportfiles/sale_report_09_".(intval(substr($mes, stripos($mes, 'กย')+6,2))-43).".html";
 		}else{
 			return datefail();
 		}			
 	}else if(stripos($mes, 'ตค')){
 		if(is_numeric(substr($mes, stripos($mes, 'ตค')+6,2)) and strlen(substr($mes, stripos($mes, 'ตค')+6,2))==2){
-			return "sale_report_10_".(intval(substr($mes, stripos($mes, 'ตค')+6,2))-43).".html";
+			return "msu.ezmember.org:7080/report/reportfiles/sale_report_10_".(intval(substr($mes, stripos($mes, 'ตค')+6,2))-43).".html";
 		}else{
 			return datefail();
 		}			
 	}else if(stripos($mes, 'พย')){
 		if(is_numeric(substr($mes, stripos($mes, 'พย')+6,2)) and strlen(substr($mes, stripos($mes, 'พย')+6,2))==2){
-			return "sale_report_11_".(intval(substr($mes, stripos($mes, 'พย')+6,2))-43).".html";
+			return "msu.ezmember.org:7080/report/reportfiles/sale_report_11_".(intval(substr($mes, stripos($mes, 'พย')+6,2))-43).".html";
 		}else{
 			return datefail();
 		}			
 	}else if(stripos($mes, 'ธค')){
 		if(is_numeric(substr($mes, stripos($mes, 'ธค')+6,2)) and strlen(substr($mes, stripos($mes, 'ธค')+6,2))==2){
-			return "sale_report_12_".(intval(substr($mes, stripos($mes, 'ธค')+6,2))-43).".html";
+			return "msu.ezmember.org:7080/report/reportfiles/sale_report_12_".(intval(substr($mes, stripos($mes, 'ธค')+6,2))-43).".html";
 		}else{
 			return datefail();
 		}			
@@ -117,10 +117,10 @@ if (!is_null($events['events'])) {
 					'type' => 'text',
 					'text' => $user."\nwww.facebook.com"
 				];
-			}else if($event['message']['text']=="ขอรายงาน"){
+			}else if(stripos($text, "ขอรายงาน") !== false){
 				$messages = [
 					'type' => 'text',
-					'text' => "msu.ezmember.org:7080/report/reportfiles/".getdatenyear($text)
+					'text' => getdatenyear($text)
 					//'text' => "sheltered-plateau-71817.herokuapp.com/reporttest.htm"
 				];
 			}else{
