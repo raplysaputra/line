@@ -35,7 +35,7 @@ if (!is_null($events['events'])) {
 					'type' => 'text',
 					'text' => $user."\nwww.facebook.com"
 				];
-			}else if(stripos($text, "ขอรายงาน") !== false){
+			}else if($event['message']['text']=="ขอรายงาน"){
 				$messages = [
 					'type' => 'text',
 					'text' => "msu.ezmember.org:7080/report/";
