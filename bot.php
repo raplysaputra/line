@@ -124,9 +124,13 @@ if (!is_null($events['events'])) {
 					//'text' => "sheltered-plateau-71817.herokuapp.com/reporttest.htm"
 				];
 			}else{
-				$messages = [
+				/*$messages = [
 					'type' => 'text',
 					'text' => $user."\nคุณส่งคำว่า : ".$text
+				];*/
+				$messages = [
+					'type' => 'text',
+					'text' => "นี่คือระบบขอรายงา\n".info()
 				];
 			}
 
