@@ -130,7 +130,7 @@ if (!is_null($events['events'])) {
 				];*/
 				$messages = [
 					'type' => 'text',
-					'text' => "นี่คือระบบขอรายงา\n".info()
+					'text' => "นี่คือระบบขอรายงาน\n".info()
 				];
 			}
 
