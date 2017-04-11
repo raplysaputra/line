@@ -96,6 +96,12 @@ $content = file_get_contents('php://input');
 // Parse JSON
 $events = json_decode($content, true);
 // Validate parsed JSON data
+mysql_connect("180.183.246.189:8306","root","888ehong") or die(mysql_error());
+mysql_select_db("repair");  
+mysql_query("set names utf8");
+$objrp=mysql_query("select count(*) as branch from branch group by br_id");
+$rsrp=mysql_fetch_assoc($objrp);
+mysql_close();
 if (!is_null($events['events'])) {
 	// Loop through each event
 	foreach ($events['events'] as $event) {
@@ -120,7 +126,7 @@ if (!is_null($events['events'])) {
 			}else if(stripos($text, "ขอรายงาน") !== false){
 				$messages = [
 					'type' => 'text',
-					'text' => getdatenyear($text)
+					'text' => "สาขา".$rsrp['branch'].getdatenyear($text)
 					//'text' => "sheltered-plateau-71817.herokuapp.com/reporttest.htm"
 				];
 			}else{
@@ -130,7 +136,7 @@ if (!is_null($events['events'])) {
 				];*/
 				$messages = [
 					'type' => 'text',
-					'text' => "นี่คือระบบขอรายงาน เลือกดูได้ที่\n".info()
+					'text' => "สาขา".$rsrp['branch']."นี่คือระบบขอรายงาน เลือกดูได้ที่\n".info()
 				];
 			}
 
