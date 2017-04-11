@@ -84,12 +84,12 @@ function getdatenyear($mes){
 	return info();
 }
 function info(){
-	return "report.ezmember.org\nตัวอย่างคำขอ\n'ขอรายงานมค59'\nเดือนที่รองรับ: มค,กพ,มีค,เมย,พค,มิย,กค,สค,กย,ตค,พย,ธค";
+	return "report.ezmember.org/graph.html\nตัวอย่างคำขอ\n'ขอรายงานมค59'\nเดือนที่รองรับ: มค,กพ,มีค,เมย,พค,มิย,กค,สค,กย,ตค,พย,ธค";
 }
 function datefail(){
 	return "โปรดระบุปี เช่น มค59";
 }
-$access_token = 'KKTDf1y+hn0XlTc/dwdnTGW3lM1iNlae4bgksk/7JLLBJo8rTZmPN5jmlCnfSQh4C9egi4Wq0pO5jx1OieL3Oph6NsrS2rnO3Frl/C5RHBP85LQmJLKAzf7fcvZoeMlufycfb5PSM0cbYpWLnWkG4wdB04t89/1O/w1cDnyilFU=';
+$access_token = 'OMSyT23Ejp0EfLerdswJpK0fjAtjEAK9UwDaJxloT58SxgFjaiqalHnVjHGitZdNC9egi4Wq0pO5jx1OieL3Oph6NsrS2rnO3Frl/C5RHBMGK2jvvbW39OhyzCyv8N/uRayhPzNYsUuWu4Odz6w5YwdB04t89/1O/w1cDnyilFU=';
 
 // Get POST body content
 $content = file_get_contents('php://input');
