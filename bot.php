@@ -123,16 +123,22 @@ if (!is_null($events['events'])) {
 					'text' => getdatenyear($text)
 					//'text' => "sheltered-plateau-71817.herokuapp.com/reporttest.htm"
 				];
-			}else{
-				/*$messages = [
+			}else if(stripos($text, "กินข้าวยัง") !== false){
+				$messages = [
+					'type' => 'text',
+					'text' => "ยังๆ กำลังหิวเลย"
+					//'text' => "sheltered-plateau-71817.herokuapp.com/reporttest.htm"
+				];
+			}/*else{
+				$messages = [
 					'type' => 'text',
 					'text' => $user."\nคุณส่งคำว่า : ".$text
-				];*/
+				];
 				$messages = [
 					'type' => 'text',
 					'text' => "นี่คือระบบขอรายงาน เลือกดูได้ที่\n".info()
 				];
-			}
+			}*/
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
